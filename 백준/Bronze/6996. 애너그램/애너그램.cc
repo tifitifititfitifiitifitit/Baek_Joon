@@ -29,15 +29,9 @@ int main() {
 		for (j = 0; j < b.length(); j++) {
 			b_alpha[b[j] - 'a']++;
 		}
-		/*
-		cout << "A : ";
-		for (j = 0; j < 26; j++) cout << a_alpha[j] << " ";
-		cout << "\nB : ";
-		for (j = 0; j < 26; j++) cout << b_alpha[j] << " ";
-		cout << endl;
-		*/
+        
 		for (j = 0; j < 26; j++) {
-			if (a_alpha[j] < b_alpha[j]) {
+			if (a_alpha[j] < b_alpha[j]) {  //b의 알파벳보다 a의 알파벳이 모자라면
 				cout << a << " & " << b << " are NOT anagrams.\n";
 				break;
 			}
